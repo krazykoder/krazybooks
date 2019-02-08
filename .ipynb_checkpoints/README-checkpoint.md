@@ -1,2 +1,2 @@
 # krazybooks
-all python test notebooks
+All python test notebooks by krazykoder

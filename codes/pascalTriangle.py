@@ -13,9 +13,8 @@ except:
 
 if not terms > 0 :
     terms = 11
-# -----------------------------------------------------
 
-
+# --------------------------------------------------------------------
 # números de Fibonacci
 a = 0
 b = 1 
@@ -33,6 +32,7 @@ for i in range(0,terms):
 print ('fibonacci series : ', series)
 
 
+# --------------------------------------------------------------------
 # Triángulo de Pascal
 print ('this is pascal triangle: ')
 
@@ -52,15 +52,20 @@ for i in range(2,terms):
     s = n 
 
 
-# Ternas Pitagóricas (Pythagorean Triplets)
+# --------------------------------------------------------------------
+# Ternas Pitagóricas (Pythagorean Triple)
 
 ## First generate all combination of numbers in the [1, terms]
-
 a = list(range(1,terms))
 print (a)
 import itertools
 comb = itertools.combinations(a, 2)
 print (comb)
+## print the combinations 
+# for p in comb:
+#     print (p)
+
+print ("Pythagorean triplets")
 for p in comb:
     # print ('checking', p)
     a, b = p
@@ -70,6 +75,7 @@ for p in comb:
         print (a,b, int(c//1) )
 
 
+# --------------------------------------------------------------------
 # generate formulaes from pascal triangle 
 print ('this is pascal triangle assisted formulae generator ')
 
@@ -92,4 +98,6 @@ for i in range(2,terms):
     print ("Printing : (a+b)^n for n=", len(n))
     for i in range(0,len(n)): 
         print(n[i], 'a^',len(n)-i,'b^', i, '+', end =" ")
+
+# --------------------------------------------------------------------
 
